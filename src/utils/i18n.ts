@@ -1,0 +1,305 @@
+export type Language = 'en' | 'si' | 'ta' | 'fr' | 'es';
+
+export interface Translations {
+  appName: string;
+  tagline: string;
+  browseEvents: string;
+  calendarView: string;
+  organizerPortal: string;
+  superAdmin: string;
+  searchEventsPlaceholder: string;
+  allCategories: string;
+  allDates: string;
+  bookTickets: string;
+  fromPrice: string;
+  selectSeats: string;
+  groupDiscountBanner: string;
+  couponCode: string;
+  applyCoupon: string;
+  subtotal: string;
+  groupDiscount: string;
+  couponDiscount: string;
+  gatewayFee: string;
+  totalPayable: string;
+  payWithPaymentsLk: string;
+  securePaymentsBadge: string;
+  confirmationTitle: string;
+  qrCheckInInstructions: string;
+  downloadPdfTicket: string;
+  addToCalendar: string;
+  shareEvent: string;
+  dashboard: string;
+  grossSales: string;
+  netPayout: string;
+  gatewayCommission: string;
+  ticketsSold: string;
+  autoRefreshIn: string;
+  customizeMetrics: string;
+  exportPdfReport: string;
+  filterByDate: string;
+  addOrganizer: string;
+  createEvent: string;
+  manageCoupons: string;
+  checkInScanner: string;
+  tenantNotice: string;
+  soldOut: string;
+  joinWaitlist: string;
+  manageWaitlist: string;
+  waitlistNotice: string;
+  notifyAttendee: string;
+  admitAttendee: string;
+  queuePosition: string;
+}
+
+export const translations: Record<Language, Translations> = {
+  en: {
+    appName: 'TicketPulse',
+    tagline: 'Premier Event Ticketing & Organizer Platform',
+    browseEvents: 'Explore Events',
+    calendarView: 'Schedule Calendar',
+    organizerPortal: 'Organizer Portal',
+    superAdmin: 'Super Admin',
+    searchEventsPlaceholder: 'Search events by name, artist, venue...',
+    allCategories: 'All Categories',
+    allDates: 'All Dates',
+    bookTickets: 'Book Tickets',
+    fromPrice: 'From',
+    selectSeats: 'Interactive Seat Selection',
+    groupDiscountBanner: 'Group Discount: 10% off for 4+ tickets, 15% off for 8+ tickets!',
+    couponCode: 'Enter Promo Code',
+    applyCoupon: 'Apply',
+    subtotal: 'Ticket Subtotal',
+    groupDiscount: 'Group Discount',
+    couponDiscount: 'Coupon Discount',
+    gatewayFee: 'Payments.lk Gateway Commission (2.6% + 30 LKR)',
+    totalPayable: 'Total Payable',
+    payWithPaymentsLk: 'Proceed with Payments.lk',
+    securePaymentsBadge: 'Bank-grade 256-bit SSL encrypted via Payments.lk',
+    confirmationTitle: 'Booking Confirmed & E-Ticket Issued',
+    qrCheckInInstructions: 'Show this QR code at the event entrance for instant validation.',
+    downloadPdfTicket: 'Download PDF Pass',
+    addToCalendar: 'Add to Calendar',
+    shareEvent: 'Share Event',
+    dashboard: 'Analytics Dashboard',
+    grossSales: 'Gross Sales',
+    netPayout: 'Net Organizer Payout',
+    gatewayCommission: 'Payments.lk Commission',
+    ticketsSold: 'Tickets Sold',
+    autoRefreshIn: 'Auto-refresh in',
+    customizeMetrics: 'Customize Screen Metrics',
+    exportPdfReport: 'Export PDF Report',
+    filterByDate: 'Filter Date Range',
+    addOrganizer: 'Register Organizer',
+    createEvent: 'Create New Event',
+    manageCoupons: 'Coupon Manager',
+    checkInScanner: 'Gate Check-In Station',
+    tenantNotice: 'Strict Organizer Isolation: You can only view and manage your own events.',
+    soldOut: 'Sold Out',
+    joinWaitlist: 'Join Priority Waitlist',
+    manageWaitlist: 'Waitlist Queue',
+    waitlistNotice: 'All tickets are currently allocated. Join the priority waitlist to get alerted if seats release.',
+    notifyAttendee: 'Notify Attendee',
+    admitAttendee: 'Admit Attendee',
+    queuePosition: 'Queue Position',
+  },
+  si: {
+    appName: 'TicketPulse',
+    tagline: 'ප්‍රමුඛ පෙළේ ප්‍රවේශපත් වෙන්කිරීම් හා කළමනාකරණ වේදිකාව',
+    browseEvents: 'ඉසව් ගවේෂණය',
+    calendarView: 'දින දර්ශනය',
+    organizerPortal: 'සංවිධායක පුවරුව',
+    superAdmin: 'ප්‍රධාන පරිපාලක',
+    searchEventsPlaceholder: 'ඉසව්ව, ශිල්පියා හෝ ස්ථානය සොයන්න...',
+    allCategories: 'සියලුම වර්ග',
+    allDates: 'සියලුම දින',
+    bookTickets: 'ප්‍රවේශපත් මිලදී ගන්න',
+    fromPrice: 'මිල',
+    selectSeats: 'ආසන තෝරාගැනීම',
+    groupDiscountBanner: 'කණ්ඩායම් වට්ටම්: ප්‍රවේශපත් 4කට වඩා 10%ක්, 8කට වඩා 15%ක්!',
+    couponCode: 'ප්‍රවර්ධන කේතය',
+    applyCoupon: 'යොදන්න',
+    subtotal: 'මුළු ටිකට් මුදල',
+    groupDiscount: 'කණ්ඩායම් වට්ටම',
+    couponDiscount: 'කූපන් වට්ටම',
+    gatewayFee: 'Payments.lk ගෙවීම් ගාස්තුව (2.6% + රු. 30)',
+    totalPayable: 'ගෙවිය යුතු මුළු මුදල',
+    payWithPaymentsLk: 'Payments.lk මඟින් ගෙවන්න',
+    securePaymentsBadge: 'Payments.lk මඟින් ආරක්ෂිත ගෙවීම්',
+    confirmationTitle: 'වෙන්කිරීම තහවුරු විය (විද්‍යුත් ටිකට්පත)',
+    qrCheckInInstructions: 'ඇතුල්වීමේදී මෙම QR කේතය ඉදිරිපත් කරන්න.',
+    downloadPdfTicket: 'PDF ටිකට්පත බාගන්න',
+    addToCalendar: 'දින දර්ශනයට එක් කරන්න',
+    shareEvent: 'මිතුරන් සමග බෙදාගන්න',
+    dashboard: 'විශ්ලේෂණ පුවරුව',
+    grossSales: 'මුළු ආදායම',
+    netPayout: 'ශුද්ධ ආදායම',
+    gatewayCommission: 'Payments.lk කොමිස් මුදල',
+    ticketsSold: 'විකිණූ ටිකට්පත්',
+    autoRefreshIn: 'ස්වයංක්‍රීය අලුත් කිරීම',
+    customizeMetrics: 'ප්‍රමිතික වෙනස් කරන්න',
+    exportPdfReport: 'PDF වාර්තාව බාගන්න',
+    filterByDate: 'දින පරාසය තෝරන්න',
+    addOrganizer: 'සංවිධායකයෙකු ලියාපදිංචි කරන්න',
+    createEvent: 'නව ඉසව්වක් එක් කරන්න',
+    manageCoupons: 'කූපන් කළමනාකරණය',
+    checkInScanner: 'ඇතුල්වීම් පරීක්ෂාව',
+    tenantNotice: 'සංවිධායක රහස්‍යතාව: ඔබගේ ඉසව් පමණක් පෙනෙනු ඇත.',
+    soldOut: 'අවසන් වී ඇත',
+    joinWaitlist: 'පොරොත්තු ලේඛනයට එක්වන්න',
+    manageWaitlist: 'පොරොත්තු ලේඛනය',
+    waitlistNotice: 'මෙම ඉසව්වේ සියලු ප්‍රවේශපත් අවසන්ය. ආසන හිස් වූ වහාම දැනුම්දීම් ලබාගැනීමට ලියාපදිංචි වන්න.',
+    notifyAttendee: 'දැනුම් දෙන්න',
+    admitAttendee: 'ප්‍රවේශය ලබා දෙන්න',
+    queuePosition: 'පොරොත්තු අංකය',
+  },
+  ta: {
+    appName: 'TicketPulse',
+    tagline: 'முன்னணி நிகழ்வு டிக்கெட் முன்பதிவு தளம்',
+    browseEvents: 'நிகழ்வுகளை ஆராய்க',
+    calendarView: 'நாட்காட்டி அட்டவணை',
+    organizerPortal: 'நிகழ்வு அமைப்பாளர் தளம்',
+    superAdmin: 'முதன்மை நிர்வாகி',
+    searchEventsPlaceholder: 'நிகழ்வுகள், கலைஞர்கள், இடத்தை தேடுங்கள்...',
+    allCategories: 'அனைத்து வகைகள்',
+    allDates: 'அனைத்து தேதிகள்',
+    bookTickets: 'டிக்கெட் முன்பதிவு',
+    fromPrice: 'விலை',
+    selectSeats: 'இருக்கை தேர்வு',
+    groupDiscountBanner: 'குழு தள்ளுபடி: 4+ டிக்கெட்டுகளுக்கு 10%, 8+ டிக்கெட்டுகளுக்கு 15%!',
+    couponCode: 'கூப்பன் குறியீடு',
+    applyCoupon: 'பயன்படுத்து',
+    subtotal: 'டிக்கெட் தொகை',
+    groupDiscount: 'குழு தள்ளுபடி',
+    couponDiscount: 'கூப்பன் தள்ளுபடி',
+    gatewayFee: 'Payments.lk கட்டணம் (2.6% + 30 LKR)',
+    totalPayable: 'செலுத்த வேண்டிய தொகை',
+    payWithPaymentsLk: 'Payments.lk மூலம் பணம் செலுத்துங்கள்',
+    securePaymentsBadge: 'பாதுகாப்பான கட்டண முறை',
+    confirmationTitle: 'முன்பதிவு உறுதி செய்யப்பட்டது',
+    qrCheckInInstructions: 'நுழைவாயிலில் இந்த QR குறியீட்டைக் காண்பிக்கவும்.',
+    downloadPdfTicket: 'PDF டிக்கெட்டை பதிவிறக்குக',
+    addToCalendar: 'நாட்காட்டியில் சேர்க்கவும்',
+    shareEvent: 'பகிர்க',
+    dashboard: 'பகுப்பாய்வு குழு',
+    grossSales: 'மொத்த விற்பனை',
+    netPayout: 'நிகர வருவாய்',
+    gatewayCommission: 'Payments.lk கமிஷன்',
+    ticketsSold: 'விற்கப்பட்ட டிக்கெட்டுகள்',
+    autoRefreshIn: 'தானியங்கி புதுப்பிப்பு',
+    customizeMetrics: 'அளவீடுகளை தனிப்பயனாக்குங்கள்',
+    exportPdfReport: 'PDF அறிக்கையை ஏற்றுமதி செய்க',
+    filterByDate: 'தேதியை வடிகட்டவும்',
+    addOrganizer: 'அமைப்பாளரை சேர்க்கவும்',
+    createEvent: 'புதிய நிகழ்வை உருவாக்கவும்',
+    manageCoupons: 'கூப்பன் மேலாண்மை',
+    checkInScanner: 'நுழைவு சரிபார்ப்பு',
+    tenantNotice: 'தனிப்பட்ட அணுகல்: உங்கள் நிகழ்வுகளை மட்டுமே நீங்கள் நிர்வகிக்க முடியும்.',
+    soldOut: 'விற்றுத் தீர்ந்தது',
+    joinWaitlist: 'காத்திருப்பு பட்டியலில் இணையுங்கள்',
+    manageWaitlist: 'காத்திருப்பு பட்டியல்',
+    waitlistNotice: 'அனைத்து டிக்கெட்டுகளும் முடிந்துவிட்டன. இடங்கள் கிடைத்தால் அறிவிப்பைப் பெற இணையுங்கள்.',
+    notifyAttendee: 'அறிவிக்கவும்',
+    admitAttendee: 'அனுமதிக்கவும்',
+    queuePosition: 'வரிசை எண்',
+  },
+  fr: {
+    appName: 'TicketPulse',
+    tagline: 'Plateforme Mondiale de Billetterie et Gestion d’Événements',
+    browseEvents: 'Explorer les Événements',
+    calendarView: 'Calendrier des Événements',
+    organizerPortal: 'Portail Organisateur',
+    superAdmin: 'Super Administrateur',
+    searchEventsPlaceholder: 'Rechercher par nom, artiste, lieu...',
+    allCategories: 'Toutes Catégories',
+    allDates: 'Toutes Dates',
+    bookTickets: 'Réserver des Billets',
+    fromPrice: 'À partir de',
+    selectSeats: 'Sélection Interactive de Sièges',
+    groupDiscountBanner: 'Remise de groupe : 10% dès 4 billets, 15% dès 8 billets !',
+    couponCode: 'Code Promotionnel',
+    applyCoupon: 'Appliquer',
+    subtotal: 'Sous-total',
+    groupDiscount: 'Remise Groupe',
+    couponDiscount: 'Remise Coupon',
+    gatewayFee: 'Commission Passerelle Payments.lk (2.6% + 30 LKR)',
+    totalPayable: 'Total à Payer',
+    payWithPaymentsLk: 'Payer avec Payments.lk',
+    securePaymentsBadge: 'Paiement sécurisé crypté SSL 256-bit Payments.lk',
+    confirmationTitle: 'Réservation Confirmée & E-Billet Émis',
+    qrCheckInInstructions: 'Présentez ce QR code à l’entrée pour un enregistrement instantané.',
+    downloadPdfTicket: 'Télécharger Pass PDF',
+    addToCalendar: 'Ajouter au Calendrier',
+    shareEvent: 'Partager l’Événement',
+    dashboard: 'Tableau de Bord Analytique',
+    grossSales: 'Ventes Brutes',
+    netPayout: 'Revenu Net Organisateur',
+    gatewayCommission: 'Commission Payments.lk',
+    ticketsSold: 'Billets Vendus',
+    autoRefreshIn: 'Actualisation auto dans',
+    customizeMetrics: 'Personnaliser les Métriques',
+    exportPdfReport: 'Exporter Rapport PDF',
+    filterByDate: 'Filtrer par Période',
+    addOrganizer: 'Ajouter un Organisateur',
+    createEvent: 'Créer un Nouvel Événement',
+    manageCoupons: 'Gestionnaire de Coupons',
+    checkInScanner: 'Poste d’Enregistrement',
+    tenantNotice: 'Isolation stricte : Vous ne pouvez gérer que vos propres événements.',
+    soldOut: 'Complet',
+    joinWaitlist: 'Rejoindre la Liste d’Attente',
+    manageWaitlist: 'Liste d’Attente',
+    waitlistNotice: 'Tous les billets sont vendus. Rejoignez la liste d’attente prioritaire pour être alerté.',
+    notifyAttendee: 'Notifier l’Acheteur',
+    admitAttendee: 'Attribuer un Billet',
+    queuePosition: 'Rang dans la File',
+  },
+  es: {
+    appName: 'TicketPulse',
+    tagline: 'Plataforma Global de Entradas y Gestión de Eventos',
+    browseEvents: 'Explorar Eventos',
+    calendarView: 'Calendario de Eventos',
+    organizerPortal: 'Portal de Organizadores',
+    superAdmin: 'Super Administrador',
+    searchEventsPlaceholder: 'Buscar eventos por nombre, artista o recinto...',
+    allCategories: 'Todas las Categorías',
+    allDates: 'Todas las Fechas',
+    bookTickets: 'Comprar Entradas',
+    fromPrice: 'Desde',
+    selectSeats: 'Selección Interactiva de Asientos',
+    groupDiscountBanner: 'Descuento de grupo: ¡10% en 4+ entradas, 15% en 8+ entradas!',
+    couponCode: 'Código Promocional',
+    applyCoupon: 'Aplicar',
+    subtotal: 'Subtotal de Entradas',
+    groupDiscount: 'Descuento de Grupo',
+    couponDiscount: 'Descuento de Cupón',
+    gatewayFee: 'Comisión Pasarela Payments.lk (2.6% + 30 LKR)',
+    totalPayable: 'Total a Pagar',
+    payWithPaymentsLk: 'Pagar con Payments.lk',
+    securePaymentsBadge: 'Pago seguro cifrado SSL de 256 bits Payments.lk',
+    confirmationTitle: 'Reserva Confirmada y Entrada Digital',
+    qrCheckInInstructions: 'Muestre este código QR en la entrada para validación instantánea.',
+    downloadPdfTicket: 'Descargar Entrada PDF',
+    addToCalendar: 'Añadir al Calendario',
+    shareEvent: 'Compartir Evento',
+    dashboard: 'Panel de Análisis',
+    grossSales: 'Ventas Brutas',
+    netPayout: 'Ingreso Neto Organizador',
+    gatewayCommission: 'Comisión Payments.lk',
+    ticketsSold: 'Entradas Vendidas',
+    autoRefreshIn: 'Actualización auto en',
+    customizeMetrics: 'Personalizar Métricas',
+    exportPdfReport: 'Exportar Informe PDF',
+    filterByDate: 'Filtrar por Rango de Fechas',
+    addOrganizer: 'Registrar Organizador',
+    createEvent: 'Crear Nuevo Evento',
+    manageCoupons: 'Gestor de Cupones',
+    checkInScanner: 'Control de Acceso',
+    tenantNotice: 'Aislamiento estricto: Solo puede ver y gestionar sus propios eventos.',
+    soldOut: 'Agotado',
+    joinWaitlist: 'Unirse a la Lista de Espera',
+    manageWaitlist: 'Lista de Espera',
+    waitlistNotice: 'Todas las entradas están agotadas. Únase a la lista de espera para recibir avisos de disponibilidad.',
+    notifyAttendee: 'Notificar Asistente',
+    admitAttendee: 'Admitir Asistente',
+    queuePosition: 'Posición en Cola',
+  },
+};

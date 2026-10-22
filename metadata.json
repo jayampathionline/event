@@ -1,0 +1,6 @@
+{
+  "name": "TicketPulse",
+  "description": "Event ticketing and management platform with multi-tenant organizer isolation, real-time seat selection, Payments.lk gateway commission transparency, and real-time sales reporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
